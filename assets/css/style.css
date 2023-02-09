@@ -1,22 +1,21 @@
-
 /*Seção Banner*/
 
-.banner{
+.banner {
   position: relative;
 }
 
-.banner-imagem{
-  width:100% ;
-  height:calc(80vh - 72px);/*100vh do banner - 72px do header*/
+.banner-imagem {
+  width: 100%;
+  height: calc(80vh - 72px);
+  /*100vh do banner - 72px do header*/
 }
 
-.banner-tiluto{
+.banner-tiluto {
   color: #fdfdfd;
   font-family: Pacifico, cursive;
-  font-size: 5.0625rem;
   position: absolute;
   left: 50%;
-  text-shadow: 0 4px 4px rgba(0,0,0, .75);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .75);
   top: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -25,21 +24,52 @@
 
 /*Seção Sobre*/
 
-.sobre{
-  
-}
-
-.sobre-titulo{
+.sobre {
   text-align: center;
   padding: 2.5rem;
+}
+
+.sobre-titulo {
+
   font-family: Pacifico, cursive;
   color: #8d0606;
   font-size: 3.187rem;
 }
 
-.sobre-descricao{
+.sobre-descricao {
   text-align: center;
   color: #595959;
   font-size: 1.75rem;
   font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-tiluto {
+    font-size: 3rem;
+  }
+
+  .sobre {
+    padding: 2.5rem 1rem;
+  }
+
+  .sobre-titulo {
+    font-size: 2rem;
+  }
+
+  .sobre-descricao{
+    font-size: 1.3rem;
+  }
+
+  .banner-imagem {
+
+    height: calc(100vh-51px);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+
+  .banner-tiluto {
+    font-size: 5.0625rem;
+  }
 }
